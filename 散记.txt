@@ -1,0 +1,38 @@
+require 加载模块是一个同步操作！
+Node查找文件的顺序： 核心模块 =>  当前目录  => node_modules
+
+Node的异步回调管理
+	Node中的大多数内置模块在使用回调时都会带有两个参数：第一个用来放可能发生的错误，第二个用来放结果。
+错误参数经常缩写为err。
+const fs = require('fs');
+fs.readFile("./titles.json",(err,data)=>{
+	if（err）throw err;
+})
+
+
+// 组件的拓展  minxins  extends
+vue minxins
+
+混入规则
+1. data中属性同名混入以组件属性为主
+2. 钩子函数中先运行minxins中的再执行组件内的
+3. methods,components中同名以组件为准
+
+template => compile=>render函数=>vNode=>真是dom
+
+vscode 快捷键  
+
+ctrl + \   拆分编辑器（超代码神器）
+ctrl + shift + \  代码括号匹配
+ctrl + shitf + K  删除整行
+ctrl + backspace  删除光标前一个单词
+
+命名重构：
+当我们尝试去修改某个函数（或者变量名）时，我们可以把光标放在上面，然后按下「F2」键，那么，这个函数（或者变量名）出现的地方都会被修改。
+
+方法重构：
+选中某一段代码，这个时候，代码的左侧会出现一个「灯泡图标」，点击这个图标，就可以把这段代码提取为一个单独的函数。
+
+
+Vue 子组件和父组件创建和挂载顺序
+parent created => child created => child mounted => parent mounted
