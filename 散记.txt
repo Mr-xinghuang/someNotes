@@ -36,3 +36,20 @@ ctrl + backspace  删除光标前一个单词
 
 Vue 子组件和父组件创建和挂载顺序
 parent created => child created => child mounted => parent mounted
+
+html => web网页的骨架用来定义页面的结构
+css => 用来修饰web网页
+js => 给网页添加动态的效果以及行为
+
+浏览器=》1. 渲染引擎（浏览器内核） 2.JS引擎 两部分组成
+渲染引擎：用来解析html和css,决定浏览器如何显示网页的内容以及页面的格式信息。
+JS引擎：JSweb中的javascript代码，对其处理后运行。
+
+
+Node.classList.add("class")         添加class
+
+Node.classList.remove("class")   移除class
+
+Node.classList.toggle("class")    切换class，有则移除，无则添加
+
+Node.classList.contains("class") 检测是否存在class
